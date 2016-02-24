@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rails with React</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/redux/3.3.1/redux.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/immutable/3.7.6/immutable.min.js'></script>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+  body {
+    background-color: #eee;
+  }
+
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .form-connect {
+    .btn {
+      margin-top: 10px;
+    }
+  }
+  .panel {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+
+  #page-content-wrapper {
+
+    form {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+    }
+    .messages {
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      right: 20px;
+      bottom: 70px;
+      overflow-y: auto;
+    }
+  }
+
+
+  html, body, #wrapper, #app, #page-content-wrapper {
+    height: 100%;
+  }
+
