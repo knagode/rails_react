@@ -14,7 +14,7 @@ var Room = React.createClass({
     let messageItems = this.props.messages.map(function(message, i) {
       return (
         <div className="message" key={i}>
-          <b>{message.nickname}:</b> {message.text}
+          <b>{message.get('nickname')}:</b> {message.get('text')}
         </div>
       )
     });
@@ -43,5 +43,5 @@ var Room = React.createClass({
 
 Room.propTypes = {
   room: React.PropTypes.string.isRequired,
-  messages: React.PropTypes.array.isRequired,
+  messages: React.PropTypes.object.isRequired,
 };

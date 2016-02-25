@@ -7,15 +7,16 @@ var Sidebar = React.createClass({
   },
 
   render: function() {
-    let focusedRoom = this.props.state.focusedRoom
+    let focusedRoom = this.props.state.get('focusedRoom')
 
-    let roomListItems = Object.keys(this.props.state.rooms).map(function(room) {
-      return (
-        <li key={room} className={(focusedRoom == room ? 'active' : '')}>
-          <RoomLink room={room} />
-        </li>
-      )
-    });
+    let rooms = []
+    this.props.state.get('rooms').forEach((v, room) => rooms.push(room) )
+
+    let roomListItems = rooms.map(function(room) {
+      return  <li key={room} className={(focusedRoom == room ? 'active' : '')}>
+                <RoomLink room={room} />
+              </li>
+    })
 
     return (
       <div id="sidebar-wrapper">
