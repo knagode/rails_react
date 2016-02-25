@@ -47,6 +47,6 @@ group :development do
 end
 
 gem 'react-rails'
-gem 'browserify-rails'
+#gem 'browserify-rails'
 gem "twitter-bootstrap-rails"
 
